@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+</head>
+
+<body>
+
+  <form action="/test" method="get" class="form-example">
+    
+    <h1>Race Registration!</h1>
+    
+    <div class="form">
+      <label for="firstName">First name </label>
+      <input type="text" name="firstName" id="firstName" required>
+      <label for="lastName">Last Name </label>
+      <input type="text" name="lastName" id="lastName" required>
+    </div>
+    <br>
+
+    <h2>Select framework:</h2>
+    
+    <div class="form">
+      <input type="radio" id="angular" name="framework" value="angular">
+      <label for="angular">Angular</label>
+    </div>  
+    <div class="form">
+      <input type="radio" id="react" name="framework" value="react">
+      <label for="react">React</label>
+    </div>
+    <div class="form">
+      <input type="radio" id="vue" name="framework" value="vue">
+      <label for="vue">Vue</label>
+    </div>
+
+  <br>
+
+    <div class="form">
+      <label for="email">Email: </label>
+      <input type="email" name="email" id="email" required>
+      <label for="password">Password: </label>
+      <input type="password" name="password" id="password" required>
+    </div>
+
+  <br>  
+
+    <div class="form">
+      <label for="age">Select Age:</label>
+      <select id="age" name="age">
+        <option value="young">Below 18</option>
+        <option value="ok">Above</option>
+      </select>
+    </div>
+
+<br>
+
+    <div class="form-example">
+      <button>Run</button>
+    </div>
+
+  </form>
+
+</body>
+
+</html>
+
+<!-- http://127.0.0.1:5500/test?firstName=Anton&lastName=Yavorskyi&framework=vue&email=yavorant%40gmail.com&password=545 -->
